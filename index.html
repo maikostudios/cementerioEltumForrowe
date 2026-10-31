@@ -50,7 +50,7 @@
             </ol>
         </div>
 
-        <!-- Tarjeta de Datos Visuales -->
+        <!-- Tarjeta de Datos Visuales (Actualizada) -->
         <div class="p-6 pt-6">
             <div class="bg-gray-100 border-2 border-gray-300 rounded-2xl p-5 space-y-3">
                 <div class="flex flex-col border-b border-gray-300 pb-2">
@@ -65,9 +65,20 @@
                     <span class="text-sm text-gray-500 uppercase font-bold">Banco</span>
                     <span class="text-xl font-bold text-gray-900">Prepago Tenpo</span>
                 </div>
-                <div class="flex justify-between items-center">
+                <!-- Nuevo campo: Tipo de Cuenta -->
+                <div class="flex justify-between items-center border-b border-gray-300 pb-2">
+                    <span class="text-sm text-gray-500 uppercase font-bold">Tipo de Cuenta</span>
+                    <span class="text-xl font-bold text-gray-900">Cuenta Vista</span>
+                </div>
+                <!-- Se agregó el borde inferior a N° Cuenta -->
+                <div class="flex justify-between items-center border-b border-gray-300 pb-2">
                     <span class="text-sm text-gray-500 uppercase font-bold">N° Cuenta</span>
                     <span class="text-xl font-bold text-gray-900 tracking-wider">11116966836</span>
+                </div>
+                <!-- Nuevo campo: Correo -->
+                <div class="flex flex-col pt-1">
+                    <span class="text-sm text-gray-500 uppercase font-bold">Correo Electrónico</span>
+                    <span class="text-lg font-bold text-gray-900">emibetrasa@gmail.com</span>
                 </div>
             </div>
         </div>
@@ -138,7 +149,7 @@
     </div>
 
     <script>
-        const textoBancario = `Nombre: Emilia I. Rapimán Saavedra\nRUT: 06.966.836-4\nBanco: Tenpo Prepago\nTipo de Cuenta: Cuenta Vista\nNro. de Cuenta: 11116966836\nCorreo: emibetrasa@gmail.com`;
+        const textoBancario = `Nombre: Emilia Rapimán Saavedra\nRUT: 06.966.836-4\nBanco: Tenpo Prepago\nTipo de Cuenta: Cuenta Vista\nNro. de Cuenta: 11116966836\nCorreo: emibetrasa@gmail.com`;
 
         function copiarDatosBanco() {
             navigator.clipboard.writeText(textoBancario).then(() => {
